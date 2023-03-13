@@ -1,0 +1,171 @@
+/* all about header */
+.bgimg {
+    /*position: sticky;*/
+    background-color: rgb(10, 72, 87);
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 75px;
+
+}
+
+.container a {
+    font-size: 20px;
+}
+
+/* NAVBAR */
+.navbar-nav {
+    margin: 0 20%;
+}
+
+.navbar-nav li {
+    padding-right: 7%;
+    padding-left: 7%;
+    font-size: 18px;
+}
+
+.activeee {
+    text-decoration: underline;
+    text-underline-offset: 10px;
+}
+.contact{
+    background-image: url(images/bgimg.jpg);
+    /* background-size: 100% 100%; */
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    width: 98%;
+    height: 400px;
+    margin: 7px;
+    
+
+}
+#imageset1{
+    width: 50px;
+    height: 50px;
+    /*background-color:black;*/
+    color: white;
+    justify-content: center;
+    display: flex;
+    font-size: 50px;
+    float: left;
+    padding: 5px;
+}
+
+#imageset2{
+    width: 40px;
+    justify-content: center;
+    display: flex;
+    font-size: 25px;
+    float: left;
+    padding: 5px;
+}
+
+#updates{
+    background-color: #1e3152;
+    color: aliceblue;
+    margin: 8px;
+}
+
+#updates h2, #updates p{
+    width: 70%;
+    padding-left: 66px;
+}
+#updates button{
+    background-color: #cfd9f9;
+    color: darkblue;
+    width: 254px;
+    text-align: center;
+    margin-left: 65px;
+    border-radius: 12px;
+    font-family: fantasy;
+}
+.content{
+    text-align: center;
+    font-family: fantasy;
+    color: white;
+}
+.container-1 {
+    width: 30%;
+    height: 302px;
+    margin: 5px;
+    border: 1px solid;
+    float: left;
+    color:white;
+}
+
+.container-2 {
+    width: 68%;
+    height: 302px;
+    margin: 5px;
+    float: left;
+    border: 1px solid;
+    color: white;
+}
+
+.container-2 input,
+.container-2 textarea {
+    border: none;
+    background: inherit;
+    border-bottom: 1px solid white ;
+   
+}
+.container-2 button{
+    width: 120px;
+    text-align: center;
+    
+    border-radius: 12px;
+    font-family: fantasy;
+
+}
+#map {
+    margin-left: 30px;
+}
+
+/* subscribe */
+.subscribe {
+    background-color: rgb(10, 72, 87);
+}
+
+.subscribe__input {
+    width: 50%;
+    height: 2.5rem ;
+    padding-right: .5rem;
+    background-color: white;
+}
+
+.subs {
+    background-color: white;
+    color: rgb(10, 72, 87);
+    font-weight: bolder;
+    border: none;
+    height: 2.5rem !important;
+}
+
+/* ending */
+.iconss {
+    color: rgb(10, 72, 87);
+    ;
+}
+
+/* copyrights */
+.copyrights {
+    color: lightslategrey;
+}
+
+#termsagree {
+    cursor: pointer;
+}
+
+#termsagree:hover {
+    color: rgb(10, 72, 87);
+}
+@media(min-width:820px) and (max-width:1180px) {
+    .container-1 {
+        width: 27%;
+        
+    }
+   
+    }

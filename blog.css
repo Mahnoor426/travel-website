@@ -1,0 +1,110 @@
+/* all about header */
+.bgimg {
+    /*position: sticky;*/
+    background-color: rgb(10, 72, 87);
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 75px;
+    
+}
+
+.container a {
+    font-size: 20px;
+}
+
+/* NAVBAR */
+.navbar-nav {
+    margin: 0 20%;
+}
+
+.navbar-nav li {
+    padding-right: 7%;
+    padding-left: 7%;
+    font-size: 18px;
+}
+
+.activeee {
+    text-decoration: underline;
+    text-underline-offset: 10px;
+}
+
+/* quotes */
+#quote {
+    background-image: url("images/quote.jpg");
+    width: 100%;
+    height: 175px;
+}
+
+#quote h3 {
+
+    color: white;
+    text-align: center;
+    padding: 58px;
+
+}
+
+#p-posts,
+#r-posts {
+    text-align: center;
+    color: rgb(1, 63, 92);
+    display: inline;
+}
+
+#about-blog img {
+    float: right;
+    border-radius: 50%;
+    border: 1px solid black;
+    height: 202px;
+    width: 231px;
+    margin-top: -42px;
+    
+}
+
+#about-blog h1,
+p {
+    float: left;
+    padding: 12px;
+    width: 100%;
+    
+}
+#about-blog p{
+    width: 80%;
+}
+/* ending */
+.iconss{
+    color: rgb(10, 72, 87); ;
+}
+/* copyrights */
+.copyrights {
+    color: lightslategrey;
+}
+
+#termsagree {
+    cursor: pointer;
+}
+
+#termsagree:hover {
+    color: rgb(10, 72, 87);
+}
+
+.card-body button{
+    background-color: #0000005e;
+    color: white;
+    margin-left: 39px;
+    width: 157px;
+    border-radius: 10px;
+    font-family: 'FontAwesome';
+    
+
+}
+@media(min-width:820px) and (max-width:1180px) {
+    #about-blog p{
+width: 70%;
+    }
+    .card-body button{
+        margin-left: 0px;
+    }
+}

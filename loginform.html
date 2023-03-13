@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+</head>
+<body>
+    <script>
+        const signUpButton = document.getElementById('signUp');
+        const signInButton = document.getElementById('signIn');
+        const container = document.getElementById('container');
+
+        signUpButton.addEventListener('click', () => {
+            container.classList.add("");
+        });
+
+        signInButton.addEventListener('click', () => {
+            container.classList.remove("");
+        });
+    </script>
+    <div class="container right-panel-active" id="container">
+        <div class="form-container sign-up-container">
+            <form action="#">
+                <h1>Create Account</h1>
+                <div class="social-container">
+                    <a href="#" class="social"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#" class="social"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" class="social"><i class="fa-brands fa-twitter"></i></a>
+                </div>
+                <span>or use your email for registration</span>
+                <input type="text" placeholder="Name" required/>
+                <input type="email" placeholder="Email" required/>
+                <input type="password" placeholder="Password" required/>
+                <button>Sign Up</button>
+            </form>
+        </div>
+
+        <?php
+$sname="localhost";
+$uname="root";
+$pass="";
+$DBname="studentportal";
+ 
+$conn=mysqli_connect($sname,$uname,$pass);
+if(!$conn)
+{
+    echo("Unable to connect with server");
+    die();
+}
+else
+{
+    echo("Connected with webs server");
+}
+ 
+$DB=mysqli_select_db($conn,$DBname);
+ 
+if(!$DB)
+{
+    echo("<br>Unable to connect with Database");
+    die();
+}
+else
+{
+    echo("<br>Database connected successfully");
+}
+$query="select * from student";
+$result=mysqli_query($conn,$query);
+?>
+<!DOCTYPE html>
+<html>
+    <body style="background-color:grey">
+        <table align="center" border="1 px solid black" style="width:600px;line-height:40px;">
+        <tr>
+            <th style="background-color:red" colspan="4"><h2>Student Information System</h2></th>
+        </tr>
+        <tr style="background-color:blue;color:white;font-style:italic;font-size:20px;">
+            <td>ID</td>
+            <td>Name</td>
+            <td>Address</td>
+            <td>Age</td>
+        </tr>
+        <?php
+        while($rows=mysqli_fetch_assoc($result))
+        {
+        ?>
+        <tr style="background-color:khaki">
+            <td><?php echo $rows['sid']; ?></td>
+            <td><?php echo $rows['name']; ?></td>
+            <td><?php echo $rows['address']; ?></td>
+            <td><?php echo $rows['age']; ?></td>
+        </tr>
+        <?php
+        }
+        ?>
+       </table>
+</body>
+</html>
+
+
+
+
+
+
+        <div class="form-container sign-in-container">
+            <form action="#">
+                <h1>Sign in</h1>
+                <div class="social-container">
+                    <a href="#" class="social"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#" class="social"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" class="social"><i class="fa-brands fa-twitter"></i></a>
+                </div>
+                <span>or use your account</span>
+                <input type="email" placeholder="Email" required/>
+                <input type="password" placeholder="Password" required/>
+                <a href="#">Forgot your password?</a>
+                <button>Sign In</button>
+            </form>
+        </div>
+        <div class="overlay-container">
+            <div class="overlay">
+                <div class="overlay-panel overlay-left">
+                    <h1>Already have an Account!</h1>
+                    <p>To continue to the next step or to make changes to your reservation please sign in.</p>
+                    <button class="ghost" id="signIn">Sign In</button>
+                </div>
+                <div class="overlay-panel overlay-right">
+                    <h1>Explore the world with us!</h1>
+                    <p>Enter your personal details and start journey with us</p>
+                    <button class="ghost" id="signUp">Sign Up</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+   
+</body>
+
+</html>

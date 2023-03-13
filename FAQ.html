@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="info.css">
+
+    <style>
+        img {
+            border-radius: 35px;
+    width: 47%;
+    height: 304px;
+    margin: 10px;
+    margin-left: 332px;
+}
+        button{
+            width: 95%;
+    border-radius: 10px;
+    background-color: #1e3152;
+    color: azure;
+    height: 40px;
+    margin: 2px;
+    margin-left: 32px;}
+
+    p{
+        width: 95%;
+    border-radius: 10px;
+        text-align: center;
+        background-color: #cfd9f9;
+        margin-left: 32px;
+    }
+    @media(min-width:820px) and (max-width:1180px) {
+           
+           img{
+            margin-left: 221px;
+    width: 50%;
+           }
+           }
+    </style>
+</head>
+
+<body>
+    <!-- BACKGROUND WITH NAVBAR -->
+    <div class="bgimg">
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top pt-4">
+            <div class="container">
+                <a href="#top" class="navbar-brand text-white font-weight-bold">MZM TRAVELS</a>
+                <!-- Toggler/collapsibe Button -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Navbar links -->
+                <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link text-white " href="#ser"
+                                onclick="window.location.href='index.html'">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white " href="#con">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#con"
+                                onclick="window.location.href='blog.html'">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white activeee" href="#con">Info</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </nav>
+    </div>
+    <br>
+    <div>
+        <img src="images/faq.jpg" alt="">
+
+        <button type='button' onclick="toggleText1()">1. What is online ticketing / booking and how do I use
+            it?</button>
+        <p id='aaaa' style='display: none'>Online ticketing / booking is a convenient way of booking your travel over
+            the internet. Using PIA online services you can: <br>
+
+            Book a flight and pay online for your travel <br>
+            Request for a particular seat, special meal or service <br>
+            Check Flight status with availability of price
+
+        </p>
+
+        <button type='button' onclick="toggleText2()">2. How do I use the online booking service?</button>
+        <p id='bbbb' style='display: none'>VISIT OUR PAGE <a href="#"></a> and then follow the procedure: <br>Search
+            flights - Find a suitable flight/routing/date
+            Select flights - Display of fares and selection of suitable fares <br>
+            Seat Selection – Select normal free seat or purchase bulk head seat (if required) <br>
+            Passengers & Payments – Insert details of passengers and payment card details on a secured web-page <br>
+            Confirmation – Generation of confirmation of the web booking.
+        </p>
+
+        <button type='button' onclick="toggleText3()">
+            3. What should I do if my flight has been cancelled or the scheduled flight time has been changed?</button>
+        <p id='cccc' style='display: none'>Customers may call PIA Contact Center +92-335-1234-123 for assistance on
+            flights which have either been cancelled or the scheduled flight time has been changed or flight departure
+            is within three hours.</p>
+
+        <button type='button' onclick="toggleText4()">4. How do I know that the connection is secure?</button>
+        <p id='dddd' style='display: none'>The closed lock sign on the bottom of the browser is an indication that the
+            page is secure. You may also view the same, using the browser security options in the tools/ properties
+            depending on the browser you are using.</p>
+
+        <button type='button' onclick="toggleText5()">5. If I need to change the booking dates, what should I
+            do?</button>
+        <p id='eeee' style='display: none'> Sorry, but you can't make changes online. Please contact us on
+            +92-335-1234-123 or if its convenient for you visit our main branch in Islamabad. location is there
+            available on this website. </p>
+
+
+        <button type='button' onclick="toggleText6()">6. I am getting an error of Card processing or Payment
+            Processing?</button>
+        <p id='ffff' style='display: none'>For both issues, contact bank because bank isnot giving approval for the
+            transaction due to account limit exceed or any other reason.</p>
+
+        <button type='button' onclick="toggleText7()">7. Do you have special offers?
+        </button>
+        <p id='gggg' style='display: none'>Special offers are regularly updated on this site. <a href="#">click here</a>
+            to see the latest offers available.</p>
+
+        <br>
+        <!-- copyrights -->
+        <div class="container w-75">
+            <div class="row copyrights">
+                <div class="col-7">© 2021 Bedimcode. All rigths reserved.</div>
+                <div class="col-3" id="termsagree">Terms and agreements</div>
+                <div class="col-2" id="termsagree">Privacy policy</div>
+            </div>
+        </div>
+
+
+
+</body>
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<script src="app.js"></script>
+<script src="FAQ.js"></script>
+
+</html>

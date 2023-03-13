@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>blogs</title>
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="blog.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js"
+        integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT"
+        crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <!-- BACKGROUND WITH NAVBAR -->
+    <div class="bgimg">
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top pt-4">
+            <div class="container">
+                <a href="#top" class="navbar-brand text-white font-weight-bold">MZM TRAVELS</a>
+                <!-- Toggler/collapsibe Button -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Navbar links -->
+                <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link text-white " href="#ser" onclick="window.location.href='index1.html'">Home</a>
+                        </li>
+                        <div class="dropdown">
+                            <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Tours
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                <li><a class="dropdown-item" href="#con" onclick="window.location.href='tour.html'">Destinations</a></li>
+                                <li><a class="dropdown-item" href="#con" onclick="window.location.href='privatetour.html'" >Private Tours</a></li>
+                            </ul>
+                            </div>
+                        <li class="nav-item">
+                            <a class="nav-link text-white activeee" href="#con">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#con"  onclick="window.location.href='info.html'">Info</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <br>
+
+    <div id="quote">
+        <h3>"WE TRAVEL NOT TO ESCAPE LIFE BUT FOR LIFE NOT TO ESCAPE US"</h3>
+    </div>
+<br>
+    <div id="about-blog">
+        <div>
+            <h1>We Share Our Travel Stories</h1>
+            <p>Browse through our first hand articles, supported by beautiful photo material. These blogs will tell you
+                about different colours of Pakistan. Where you can find live musics? Will your senses be affected? For sure,
+                such beautiful smells and sounds will surround you and make you feel that you are the part of fantasy.
+                <br><br><br>
+                "The best compliment people can give me about my blog is that it inspired them to travel, entertained them
+                and made them laugh."
+            </p>
+        </div>
+        <img src="images/admin.jpg" alt="admin">
+    </div>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <!-- ///CAROUSELS/// -->
+    <!--Carousel Wrapper-->
+    <div id="p-posts">
+        <h4>Popular Posts</h4>
+    </div>
+    <div id="multi-item-example" class="carousel slide carousel-multi-item w-75 mx-auto mb-5 pb-4" data-ride="carousel">
+
+        <!--Controls-->
+        <div class="controls-top col-md-2 ml-auto">
+            <a class="btn-floating" href="#multi-item-example" data-slide="prev"><i class="fa fa-chevron-left"></i></a>
+            <a class="btn-floating" href="#multi-item-example" data-slide="next"><i class="fa fa-chevron-right"></i></a>
+        </div>
+        <!--/.Controls-->
+
+        <!--Slides-->
+        <div class="carousel-inner mt-3" role="listbox">
+
+            <!--First slide-->
+            <div class="carousel-item active">
+
+                <div class="card-deck">
+                    <div class="card">
+                        <img src="images/naran khagan.jpg" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Trip to Naran Khagan</h5>
+                            <p class="card-text">Ms. Mahnoor Fatima</p>
+                            <p class="card-text">Jan 01,2022 | 200 comments | 20 min read</p>
+                            <button class="card-text" onclick="window.location.href='page1.html'">READ MORE</button>
+
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="images/hunza.jpg" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">My magical holiday in Hunza will inspire u to hit the road.</h5>
+                            <p class="card-text">Ms. Shazia Tariq</p>
+                            <p class="card-text">Feb 01,2022 | 104 comments | 20 min read</p>
+                            <button class="card-text" onclick="window.location.href='page2.html'">READ MORE</button>
+
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="images/swat6.jpg" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">My trip to Swat wrapped in my travel diaries.</h5>
+                            <p class="card-text">Mr. Tariq Rehman</p>
+                            <p class="card-text">Dec 04,2021 | 108 comments | 15 min read</p>
+                            <button class="card-text" onclick="window.location.href='page3.html'">READ MORE</button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!--/.First slide-->
+
+            <!--Second slide-->
+            <div class="carousel-item">
+                <div class="card-deck">
+                    <div class="card">
+                        <img src="images/underrated.jpg" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">4 Underrated destinations you must have on your travel list</h5>
+                            <p class="card-text">Ms. Hiba Fatima</p>
+                            <p class="card-text">Nov 11,2021 | 100 comments | 15 min read</p>
+                            <button class="card-text" onclick="window.location.href='page4.html'">READ MORE</button>
+
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="images/work from home.jpg" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Work from home ....Also while travelling...Doesn't seems excited!!</h5>
+                            <p class="card-text">Mr. Sahban Tariq</p>
+                            <p class="card-text">Nov 21,2021 | 170 comments | 15 min read</p>
+                            <button class="card-text" onclick="window.location.href='page5.html'">READ MORE</button>
+
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="images/murree.jpg" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Trip to Murree</h5>
+                            <p class="card-text">Ms Amna Ali</p>
+                            <p class="card-text">Jan 05,2021 | 190 comments | 15 min read</p>
+                            <button class="card-text" onclick="window.location.href='page6.html'">READ MORE</button>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!--/.Second slide-->
+        </div>
+    </div>
+
+    <div id="r-posts">
+        <h4>Recent Posts</h4>
+    </div>
+    <br>
+    <!--Carousel Wrapper-->
+    <div id="multi-item-example" class="carousel slide carousel-multi-item w-75 mx-auto mb-5 pb-4" data-ride="carousel">
+
+        <!--Controls-->
+        <div class="controls-top col-md-2 ml-auto">
+            <a class="btn-floating" href="#multi-item-example" data-slide="prev"><i class="fa fa-chevron-left"></i></a>
+            <a class="btn-floating" href="#multi-item-example" data-slide="next"><i class="fa fa-chevron-right"></i></a>
+        </div>
+        <!--/.Controls-->
+
+        <!--Slides-->
+        <div class="carousel-inner mt-3" role="listbox">
+
+            <!--First slide-->
+            <div class="carousel-item active">
+
+                <div class="card-deck">
+                    <div class="card">
+                        <img src="images/naran khagan.jpg" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Trip to Naran Khagan</h5>
+                            <p class="card-text">Ms. Mahnoor Fatima</p>
+                            <p class="card-text">Jan 01,2022 | 200 comments | 20 min read</p>
+                            <button class="card-text" onclick="window.location.href='page1.html'">READ MORE</button>
+
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="images/hunza.jpg" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">My magical holiday in Hunza will inspire u to hit the road.</h5>
+                            <p class="card-text">Ms. Shazia Tariq</p>
+                            <p class="card-text">Feb 01,2022 | 104 comments | 20 min read</p>
+                            <button class="card-text" onclick="window.location.href='page2.html'">READ MORE</button>
+
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="images/swat.jpg" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">My trip to Swat wrapped in my travel diaries.</h5>
+                            <p class="card-text">Mr. Tariq Rehman</p>
+                            <p class="card-text">Dec 04,2021 | 108 comments | 15 min read</p>
+                            <button class="card-text" onclick="window.location.href='page3.html'">READ MORE</button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--/.First slide-->
+
+            <!--Second slide-->
+            <div class="carousel-item">
+                <div class="card-deck">
+                    <div class="card">
+                        <img src="images/underrated.jpg" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">4 Underrated destinations you must have on your travel list</h5>
+                            <p class="card-text">Ms. Hiba Fatima</p>
+                            <p class="card-text">Nov 11,2021 | 100 comments | 15 min read</p>
+                            <button class="card-text" onclick="window.location.href='page4.html'">READ MORE</button>
+
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="images/work from home.jpg" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Work from home ....Also while travelling...Doesn't seems excited!!</h5>
+                            <p class="card-text">Mr. Sahban Tariq</p>
+                            <p class="card-text">Nov 21,2021 | 170 comments | 15 min read</p>
+                            <button class="card-text" onclick="window.location.href='page5.html'">READ MORE</button>
+
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="images/murree.jpg" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Trip to Murree</h5>
+                            <p class="card-text">Ms Maryam Khalid</p>
+                            <p class="card-text">Jan 05,2021 | 190 comments | 15 min read</p>
+                            <button class="card-text" onclick="window.location.href='page6.html'">READ MORE</button>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!--/.Second slide-->
+        </div>
+    </div>
+    <br>
+
+    <!-- -->
+    <div class="container my-5 py-5 w-75">
+        <div class="row">
+            <div class="col"><img src="images/sponsors1.png" width="50%"></div>
+            <div class="col"><img src="images/sponsors2.png" width="50%"></div>
+            <div class="col"><img src="images/sponsors3.png" width="50%"></div>
+            <div class="col"><img src="images/sponsors4.png" width="50%"></div>
+            <div class="col"><img src="images/sponsors5.png" width="50%"></div>
+        </div>
+    </div>
+
+    <!-- ENDING -->
+    <div class="container w-75 my-5 py-5 iconss">
+        <div class="row">
+            <div class="col-4">
+                <h5>Travel</h5>
+                <p>Travel you choose the <br>
+                    destination, we offer you the <br>
+                    experience.</p>
+                <div class="container">
+                    <div class="row">
+                        <div> <a href=""> <i class="fa fa-facebook-square iconss"></i></a></div>
+                        <div> <a href=""><i class="fa fa-instagram iconss pl-4"></i></a></div>
+                        <div><a href=""> <i class="fa fa-twitter iconss pl-4"></i></a></div>
+                        <div><a href=""> <i class="fa fa-youtube iconss pl-4"></i></a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <h5>About</h5>
+                <p>About us</p>
+                <p>Features</p>
+                <p>News & Blog</p>
+            </div>
+            <div class="col">
+                <h5>Company</h5>
+                <p>Team</p>
+                <p>Plan y privacy</p>
+            </div>
+            <div class="col">
+                <h5>Support Center</h5>
+                <p>FAQs</p>
+                <p>Contact us</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- copyrights -->
+    <div class="container w-75">
+        <div class="row copyrights">
+            <div class="col-7">© 2021 Bedimcode. All rigths reserved.</div>
+            <div class="col-3" id="termsagree">Terms and agreements</div>
+            <div class="col-2" id="termsagree">Privacy policy</div>
+        </div>
+    </div>
+</body>
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<script src="app1.js"></script>
+
+</html>

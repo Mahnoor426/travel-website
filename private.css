@@ -1,0 +1,118 @@
+/* html{
+    background-color: rgb(230, 212, 212) !important;
+} */
+
+
+.navv {
+    background-color: rgb(44, 90, 100);
+}
+
+html {
+    font-family: "din-2014", "sans-serif";
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+.nav-item {
+    padding: 0px 80px;
+}
+.text{
+    text-align: center;
+    font-family: 'Edu QLD Beginner', cursive;
+}
+
+.d-flex li{
+    list-style: none;
+}
+.form-text{
+    font-family: 'Roboto Slab', serif !important;
+    font-weight: bold !important;
+    color: rgb(5, 39, 48) !important;
+}
+.box{
+    background-color: #ffffff !important;
+    border: 2px solid rgb(10,72,87) !important;
+    
+}
+.box:focus{
+    background-color: rgb(171, 190, 196) !important;
+}
+.checkbox{
+    border: 2px solid rgb(10,72,87) !important;
+ 
+}
+.button{
+    background-color: rgb(5, 39, 48) !important;
+    border: rgb(5, 39, 48) !important;
+    color: #ffffff !important;
+}
+
+/* subscribe */
+.subscribe {
+    background-color: rgb(10, 72, 87);
+}
+
+.subscribe__input {
+    width: 50%;
+    height: 2.5rem !important;
+    padding-right: .5rem;
+    background-color: white;
+}
+
+.subs {
+    background-color: white;    
+    color: rgb(10, 72, 87);
+    font-weight: bolder;
+    border: none;
+    height: 2.5rem !important;
+}
+/* ending */
+.iconss{
+    color: rgb(10, 72, 87); ;
+}
+/* copyrights */
+.copyrights{
+    color: lightslategrey;
+}
+#termsagree{
+    cursor: pointer;
+}
+#termsagree:hover{
+    color: rgb(10, 72, 87);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ----media queries------ */
+@media screen and (min-width: 60em){
+.text{
+    font-size: 6.25em;
+}
+}
+@media screen and (min-width: 43.75em){
+.text{
+    font-size: 5em;
+}}
+@media screen and (min-width: 31.25em){
+.text{
+    font-size: 3.75em;
+    
+        padding-top: 1rem!important;
+    
+}}
